@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gray-50">
       <Header />
-      <main className="container mx-auto px-4 pt-32 pb-16">
+      <main className="w-full mx-auto px-4 pt-32 pb-16">
         <Hero />
         <Offers />
         <MethodSection />

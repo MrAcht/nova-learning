@@ -15,7 +15,7 @@ export default function WorkflowSection() {
             <div className="bg-[#103428] text-white text-lg sm:text-xl font-bold w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
               {index + 1}
             </div>
-            <h3 className="text-lg sm:text-xl font-bold mb-2">{step.title}</h3>
+            <h3 className="text-lg sm:text-xl text-[#103428] font-bold mb-2">{step.title}</h3>
             <p className="text-sm sm:text-base text-gray-600">{step.description}</p>
           </div>
         ))}

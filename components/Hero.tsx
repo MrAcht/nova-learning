@@ -22,7 +22,7 @@ export default function Hero() {
 
   return (
     <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-10 sm:mb-20">
-      <div>
+      <div className="text-center lg:text-left">
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-4 sm:mb-6 text-[#103428]">
           On crée des formations d'excellence.
           <br className="hidden sm:inline" />
@@ -37,8 +37,8 @@ export default function Hero() {
           Processus simple. Formation intensive. Résultats garantis.
         </p>
       </div>
-      <div className="bg-white rounded-lg p-6 shadow-lg">
-        <h2 className="text-2xl font-bold text-[#103428] mb-6">Trouvez votre formation idéale</h2>
+      <div className="bg-white rounded-lg p-6 shadow-lg mx-auto max-w-md lg:max-w-full">
+        <h2 className="text-2xl font-bold text-[#103428] mb-6 text-center">Trouvez votre formation idéale</h2>
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
             <Label htmlFor="goal" className="text-[#2f795e] font-semibold">Que voulez-vous apprendre ?</Label>
@@ -53,7 +53,7 @@ export default function Hero() {
           </div>
           <div>
             <Label className="text-[#2f795e] font-semibold">Votre niveau actuel :</Label>
-            <RadioGroup value={level} onValueChange={setLevel} className="flex space-x-4 mt-1">
+            <RadioGroup value={level} onValueChange={setLevel} className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4 mt-1">
               <div className="flex items-center space-x-2">
                 <RadioGroupItem value="beginner" id="beginner" />
                 <Label htmlFor="beginner">Débutant</Label>

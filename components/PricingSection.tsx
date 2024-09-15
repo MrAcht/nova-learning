@@ -31,13 +31,13 @@ export default function PricingSection() {
                 POPULAIRE
               </div>
             )}
-            <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">Formation {plan.duration}</h3>
-            <p className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6">{plan.price}</p>
-            <ul className="space-y-2 mb-4 sm:mb-6">
-              <li className="flex items-center text-sm sm:text-base"><CheckIcon className="w-4 h-4 sm:w-5 sm:h-5 mr-2 text-[#2f795e]" /> {plan.duration} de formation</li>
-              <li className="flex items-center text-sm sm:text-base"><CheckIcon className="w-4 h-4 sm:w-5 sm:h-5 mr-2 text-[#2f795e]" /> Exercices pratiques</li>
-              <li className="flex items-center text-sm sm:text-base"><CheckIcon className="w-4 h-4 sm:w-5 sm:h-5 mr-2 text-[#2f795e]" /> Suivi formateur</li>
-              <li className="flex items-center text-sm sm:text-base"><CheckIcon className="w-4 h-4 sm:w-5 sm:h-5 mr-2 text-[#2f795e]" /> Certification</li>
+            <h3 className="text-xl text-[#103428] sm:text-2xl font-bold mb-3 sm:mb-4">Formation {plan.duration}</h3>
+            <p className="text-2xl text-[#103428] sm:text-3xl font-bold mb-4 sm:mb-6">{plan.price}</p>
+            <ul className="space-y-2 mb-4 sm:mb-6 text-[#103428]">
+              <li className="flex items-center text-sm sm:text-base"><CheckIcon className="w-4 h-4 sm:w-5 sm:h-5 mr-2 text-[#103428]" /> {plan.duration} de formation</li>
+              <li className="flex items-center text-sm sm:text-base"><CheckIcon className="w-4 h-4 sm:w-5 sm:h-5 mr-2 text-[#103428]" /> Exercices pratiques</li>
+              <li className="flex items-center text-sm sm:text-base"><CheckIcon className="w-4 h-4 sm:w-5 sm:h-5 mr-2 text-[#103428]" /> Suivi formateur</li>
+              <li className="flex items-center text-sm sm:text-base"><CheckIcon className="w-4 h-4 sm:w-5 sm:h-5 mr-2 text-[#103428]" /> Certification</li>
             </ul>
             <Button className="w-full bg-[#103428] hover:bg-[#155642] text-white rounded-full py-2 text-sm sm:text-base transition-colors">
               Discuter de mon projet
