@@ -10,7 +10,7 @@ export default function CtaSection() {
           <p className="text-sm sm:text-base text-gray-600 mb-4">
             Pour commander votre formation, rien de plus simple ; vous prenez rendez-vous dans notre calendrier, on détermine ensemble la durée de la formation que vous voulez ainsi que la deadline. Et on peut directement commencer votre projet !
           </p>
-          <ul className="space-y-2 mb-6">
+          <ul className="space-y-2 mb-6 text-[#103428]">
             <li className="flex items-center"><CheckIcon className="w-4 h-4 sm:w-5 sm:h-5 mr-2 text-[#103428]" /> <span className="text-sm sm:text-base">Prenez rendez-vous</span></li>
             <li className="flex items-center"><CheckIcon className="w-4 h-4 sm:w-5 sm:h-5 mr-2 text-[#103428]" /> <span className="text-sm sm:text-base">On discute de votre projet</span></li>
             <li className="flex items-center"><CheckIcon className="w-4 h-4 sm:w-5 sm:h-5 mr-2 text-[#103428]" /> <span className="text-sm sm:text-base">Et on peut commencer à travailler !</span></li>
