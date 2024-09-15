@@ -53,7 +53,7 @@ export default function Hero() {
           </div>
           <div>
             <Label className="text-[#2f795e] font-semibold">Votre niveau actuel :</Label>
-            <RadioGroup value={level} onValueChange={setLevel} className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4 mt-1">
+            <RadioGroup value={level} onValueChange={setLevel} className="flex flex-col text-[#103428] sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4 mt-1">
               <div className="flex items-center space-x-2">
                 <RadioGroupItem value="beginner" id="beginner" />
                 <Label htmlFor="beginner">Débutant</Label>
@@ -70,7 +70,7 @@ export default function Hero() {
           </div>
           <div>
             <Label htmlFor="duration" className="text-[#2f795e] font-semibold">Durée de formation souhaitée (jours) :</Label>
-            <div className="flex items-center space-x-4">
+            <div className="flex items-center space-x-4 text-[#103428]">
               <Slider
                 id="duration"
                 min={1}
