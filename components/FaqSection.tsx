@@ -17,8 +17,8 @@ export default function FaqSection() {
   ]
 
   return (
-    <div className="my-20">
-      <h2 className="text-3xl font-bold text-center text-[#103428] mb-12">Vous avez des questions ? Nous avons les réponses :</h2>
+    <div className="my-10 sm:my-20 px-4 sm:px-0">
+      <h2 className="text-2xl sm:text-3xl font-bold text-center text-[#103428] mb-8 sm:mb-12">Vous avez des questions ? Nous avons les réponses :</h2>
       <div className="max-w-3xl mx-auto">
         {faqs.map((faq) => (
           <div key={faq.id} className="mb-4 border-b border-gray-200 pb-4">
@@ -26,11 +26,11 @@ export default function FaqSection() {
               className="flex justify-between items-center w-full text-left"
               onClick={() => toggleFaq(faq.id)}
             >
-              <span className="text-lg font-semibold text-[#103428]">{faq.question}</span>
-              <PlusIcon className={`w-5 h-5 text-[#2f795e] transform transition-transform ${openFaq === faq.id ? 'rotate-45' : ''}`} />
+              <span className="text-base sm:text-lg font-semibold text-[#103428]">{faq.question}</span>
+              <PlusIcon className={`w-4 h-4 sm:w-5 sm:h-5 text-[#2f795e] transform transition-transform ${openFaq === faq.id ? 'rotate-45' : ''}`} />
             </button>
             {openFaq === faq.id && (
-              <p className="mt-2 text-gray-600">{faq.answer}</p>
+              <p className="mt-2 text-sm sm:text-base text-gray-600">{faq.answer}</p>
             )}
           </div>
         ))}
