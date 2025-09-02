@@ -16,7 +16,7 @@ export default function Header() {
   }, [])
 
   const navItems = [
-    { label: 'Accueil', href: '/#hero' },
+    { label: 'Accueil', href: '/' },
     { label: 'Formations', href: '/#offres' },
     { label: 'Méthode', href: '/#method' },
     { label: 'Tarifs', href: '/#pricing' },
