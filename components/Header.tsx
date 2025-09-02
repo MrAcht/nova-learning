@@ -15,7 +15,12 @@ export default function Header() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  const navItems = ['Accueil', 'Formations', 'Méthode', 'Tarifs']
+  const navItems = [
+    { label: 'Accueil', href: '/#hero' },
+    { label: 'Formations', href: '/#offres' },
+    { label: 'Méthode', href: '/#method' },
+    { label: 'Tarifs', href: '/#pricing' },
+  ]
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -28,14 +33,14 @@ export default function Header() {
           <Link href="/" className="text-2xl sm:text-3xl font-bold text-white hidden sm:block">
             NOVA.
           </Link>
-          <nav className="flex items-center justify-center w-full sm:w-auto space-x-4 sm:space-x-6">
+          <nav className="flex items-center justify-center w-full sm:w-auto space-x-4 sm:space-x-6" aria-label="Navigation principale">
             {navItems.map((item) => (
-              <div key={item} className="relative group">
-                <Link href="#" className="text-sm font-medium text-white group-hover:text-[#103428] transition-colors">
-                  {item}
+              <div key={item.href} className="relative group">
+                <Link href={item.href} className="text-sm font-medium text-white group-hover:text-[#103428] transition-colors">
+                  {item.label}
                 </Link>
                 <span className="absolute bottom-0 left-0 w-full h-0.5 bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
-                {item === 'Méthode' && (
+                {item.label === 'Méthode' && (
                   <span className="absolute -top-2 -right-6 bg-[#155642] text-white text-xs px-1 rounded">
                     New
                   </span>
