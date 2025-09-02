@@ -21,7 +21,7 @@ export default function Hero() {
   }
 
   return (
-    <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-10 sm:mb-20">
+    <div className="container mx-auto px-4 sm:px-6 grid lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-10 sm:mb-20 lg:pl-2">
       <div className="text-center lg:text-left">
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-4 sm:mb-6 text-[#103428]">
           On crée des formations d'excellence.
