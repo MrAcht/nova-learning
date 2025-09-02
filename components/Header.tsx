@@ -27,7 +27,7 @@ export default function Header() {
       isScrolled ? 'py-2' : 'py-4'
     }`}>
       <div className={`container mx-auto px-4 sm:px-6 transition-all duration-300 ${
-        isScrolled ? 'max-w-6xl' : 'max-w-7xl mt-4'
+        isScrolled ? 'max-w-6xl' : 'max-w-7xl'
       }`}>
         <div className="bg-[#2f795e] rounded-full px-4 sm:px-8 py-2 sm:py-4 flex flex-col sm:flex-row items-center justify-between">
           <Link href="/" className="text-2xl sm:text-3xl font-bold text-white hidden sm:block">
