@@ -20,7 +20,7 @@ export async function GET() {
         }}
       >
         <div style={{ fontSize: 52, color: '#103428', fontWeight: 800 }}>NOVA</div>
-        <div style={{ fontSize: 28, color: '#2f795e', marginTop: 8 }}>Formations d'excellence</div>
+        <div style={{ fontSize: 28, color: '#2f795e', marginTop: 8 }}>Formations d&apos;excellence</div>
         <div style={{ fontSize: 20, color: '#103428', marginTop: 24, maxWidth: 800 }}>
           Accélérez votre carrière avec des programmes intensifs en 60 jours.
         </div>
